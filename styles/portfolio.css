@@ -149,7 +149,7 @@ main{
     text-align: center;
     font-size: 18px;
     line-height: 30px;
-    width: 909px;
+    width: 80%;
     padding-bottom: 34px;
     margin: 0 auto;
 }
@@ -291,13 +291,97 @@ input[type="email"],
 textarea {
     margin-bottom: 24px;
     border: 0;
-    width: 461px;
-    /* height: 64px; */
+    width: 100%;
     padding: 18px 30px;
 }
-/* 
-input{
-    height: 64px;
-} */
+
+/* small devices responsive */
+@media screen and (max-width:576px) {
+    .header{
+        background-image: none;
+    }
+    .sub-banner{
+        margin: 0 10px;
+    }
+
+    nav{
+        margin-left: 20px;
+        flex-direction: column;
+        /* align-items: flex-start; */
+    }
+    nav ul li, nav ul {
+        margin-left: 0px;
+        padding-left: 0;
+        
+    }
+    nav ul li{
+        margin-right: 20px;
+    }
+    .banner-btns{
+        display: flex;
+    }
+    .contact-btn, .download-cv-btn{
+        width: 50%;
+        /* height:90px ; */
+        padding: 18px 5px;
+    }
+    .hire-me-btn{
+        width: 120px;
+        padding: 5px 5px;
+    }
+
+    .banner img{
+        width: 100%;
+    }
+    .banner, 
+    .skills-container, 
+    .resume-content, 
+    .about-info-container, 
+    .contact {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 10px ;
+    }
+    
+    .banner-title, 
+    .banner-description{
+        padding: 20px 2px;
+    }
+    .about, 
+    .contact{
+        padding: 10px;
+    }
+    .contact 
+    input[type="text"], 
+    input[type="email"],
+    textarea {
+        padding:20px 0 20px 5px ;
+    }
+
+    
+    
+}
+
+/* medium devices responsive */
+@media  screen and (min-width:577px) and (max-width:992px) {
+    .about, .contact{
+        padding: 10px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    
+    .contact 
+    input[type="text"], 
+    input[type="email"],
+    textarea {
+        padding:20px 0 20px 5px ;
+    }
+
+    
+}
+.hide{
+    display: none;
+}
 
 
