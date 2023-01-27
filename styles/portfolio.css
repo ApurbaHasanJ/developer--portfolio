@@ -10,6 +10,8 @@ i{
 
 /* Header and Navigation Styles */
 .header{
+    max-width: 1550px;
+    margin: 0 auto;
     background: #FFF8F3;
     background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat;
@@ -261,9 +263,13 @@ main{
 
 }
 
+/* Footer */
+
 /* contact styles */
 
 .contact{
+    max-width: 1550px;
+    margin: 0 auto;
     display: flex;
     gap: 117px;
     background: #fff8e3;
@@ -364,6 +370,17 @@ textarea {
 
 /* medium devices responsive */
 @media  screen and (min-width:577px) and (max-width:992px) {
+
+    .banner-btns{
+        display: flex;
+        
+    }
+    .contact-btn, .download-cv-btn{
+        width: 50%;
+        /* height:90px ; */
+        padding: 18px 5px;
+    }
+
     .about, .contact{
         padding: 10px;
     }
@@ -380,8 +397,6 @@ textarea {
 
     
 }
-.hide{
-    display: none;
-}
+
 
 
